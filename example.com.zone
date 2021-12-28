@@ -1,0 +1,19 @@
+$TTL 1H
+@       IN SOA  @ administrator.example.com. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+@               NS      ns1.example.com.
+@               NS      ns2.example.com.
+ns1             A       10.11.12.9
+ns2             A       10.11.12.10
+@               A       203.0.113.15
+www             CNAME   example.com.
+example.com.    MX 10   mail.example.com.
+                MX 20   mail2.example.com.
+mail            A       203.0.113.80
+mail2           A       203.0.113.81
+server1         AAAA    2001:db8:10::1
+example.com.    TXT     "We can write anything in here!"
